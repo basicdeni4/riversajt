@@ -1,76 +1,153 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="bs">
 <head>
-  <meta charset="UTF-8">
-  <title>River Sarajevo</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 60px 20px;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 30px;
-    }
-    .social-links a {
-      display: inline-block;
-      margin: 10px 15px;
-      font-size: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .instagram { color: #C13584; }
-    .facebook { color: #1877F2; }
-    .olx { color: #28a745; }
-    .gmap { color: #990000; font-weight: bold; }
-    .multilang-text {
-      margin-top: 50px;
-      font-size: 16px;
-      color: #444;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: left;
-      line-height: 1.6;
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071b2d">
+  <meta name="description" content="River Auto Centar Sarajevo — autoservis, vulkanizer, praonica, autodijelovi i rent-a-car. Više od 20 godina povjerenja.">
+  <title>River Auto Centar Sarajevo</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Check our profiles - انقر على شبكاتنا الاجتماعية -Pogledajte naše profile</h1>
-  <div class="social-links">
-    <a class="instagram" href="https://www.instagram.com/riversarajevo/" target="_blank">Instagram</a>
-    <a class="facebook" href="https://www.facebook.com/riversarajevo/" target="_blank">Facebook</a>
-    <a class="olx" href="https://river_vraca.olx.ba/aktivni" target="_blank">OLX</a>
-  </div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="River početna">
+      <img src="assets/logo.jpg" alt="River Auto Centar logo">
+      <span><b>RIVER</b><small>AUTO CENTAR SARAJEVO</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Otvori meni" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Glavna navigacija">
+      <a href="#services" data-i18n="navServices">Usluge</a>
+      <a href="#rental" data-i18n="navRental">Rent-a-car</a>
+      <a href="#about" data-i18n="navAbout">O nama</a>
+      <a href="#contact" data-i18n="navContact">Kontakt</a>
+    </nav>
+    <div class="langs" aria-label="Izbor jezika">
+      <button class="active" data-lang="bs">BOS</button>
+      <button data-lang="en">ENG</button>
+      <button data-lang="ar">عربي</button>
+    </div>
+  </header>
 
-  <h2 style="margin-top: 40px;">Our location on map - Naša lokacija na mapi</h2>
-  <div class="social-links">
-    <a class="gmap" href="https://maps.app.goo.gl/Q4Rso2mZPwe7gfck6" target="_blank">Google Map</a>
-  </div>
+  <main>
+    <section class="hero" id="home">
+      <img class="hero-photo" src="assets/riverodmerc.webp" alt="River Auto Centar Sarajevo">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="eyebrow">PREKO 20 GODINA POVJERENJA</p>
+        <h1 data-i18n="heroTitle">Sve za vaše vozilo.<br><span>Na jednom mjestu.</span></h1>
+        <p class="hero-copy" data-i18n="heroCopy">Autoservis, vulkanizer, praonica, autodijelovi i pouzdan rent-a-car u Sarajevu.</p>
+        <div class="hero-actions">
+          <a class="btn primary language-call" href="tel:+38761564192"><span data-i18n="callNow">Pozovite nas</span></a>
+          <a class="btn ghost" href="#services" data-i18n="explore">Pogledajte usluge</a>
+        </div>
+      </div>
+      <div class="quick-facts">
+        <div><strong>20+</strong><span data-i18n="years">godina iskustva</span></div>
+        <div><strong>6</strong><span data-i18n="allServices">usluga na jednom mjestu</span></div>
+        <div><strong>08–18h</strong><span data-i18n="workdays">ponedjeljak–subota</span></div>
+      </div>
+    </section>
 
-  <div class="multilang-text">
-    <p><strong>BOS:</strong><br>
-    Naša web-stranica je u fazi izrade pa nas možete kontaktirati direktno na broj: +38762752155 (ili Whatsapp, Viber, Telegram)<br>
-    Naša djelatnost je servisiranje i održavanje vozila + izdavanje rent-a-car vozila (usluge vozača - turističke ture) u Sarajevu, Bosni i Hercegovini - Evropi.<br>
-    Prevoz putnika udobnim vozilima novije proizvodnje na sve željene destinacije. Kompletan turistički aranžman u Sarajevu - smještaj, prijevoz, rent-a-car, vodič, aerodrom transferi; limuzina, kombi ili minibus. River d.o.o. Sarajevo - naš mail: river.vraca@gmail.com</p>
+    <section class="section services" id="services">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="serviceEyebrow">AUTO CENTAR RIVER</p>
+        <h2 data-i18n="serviceTitle">Briga o vozilu od servisa do čistoće</h2>
+        <p data-i18n="serviceLead">Pouzdane usluge za sigurnu, urednu i bezbrižnu vožnju.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card feature">
+          <span class="icon">⚙</span><h3 data-i18n="diagnostics">Dijagnostika i servis</h3>
+          <p data-i18n="diagnosticsCopy">Kompjuterska dijagnostika, mali servis te pregled i popravka ključnih sistema vozila.</p>
+          <ul><li data-i18n="smallService">Zamjena ulja i svih filtera</li><li data-i18n="suspension">Kugle, krajnice, lafete, stabilizatori i amortizeri</li></ul>
+        </article>
+        <article class="service-card">
+          <span class="icon">◉</span><h3 data-i18n="brakes">Kočioni sistem</h3>
+          <p data-i18n="brakesCopy">Diskovi i disk pločice, pakne i sajle ručne kočnice te reparacija kliješta.</p>
+        </article>
+        <article class="service-card">
+          <span class="icon">◌</span><h3 data-i18n="tires">Vulkanizer</h3>
+          <p data-i18n="tiresCopy">Profesionalna briga o gumama za sigurnu vožnju tokom cijele godine.</p>
+        </article>
+        <article class="service-card">
+          <span class="icon">✦</span><h3 data-i18n="wash">Praonica i dezinfekcija</h3>
+          <p data-i18n="washCopy">Pranje vozila i dezinfekcija ventilacionog sistema ozonom.</p>
+        </article>
+        <article class="service-card">
+          <span class="icon">▣</span><h3 data-i18n="parts">Autodijelovi i oprema</h3>
+          <p data-i18n="partsCopy">Ulje, maziva, dijelovi i oprema uz gratis servis ili poseban popust pri kupovini kod nas.</p>
+        </article>
+        <article class="service-card accent">
+          <span class="icon">◆</span><h3 data-i18n="booking">Zakažite termin</h3>
+          <p data-i18n="bookingCopy">Nazovite servis i dogovorite termin koji vam odgovara.</p>
+          <a href="tel:+38733719777">033 719 777 →</a>
+        </article>
+      </div>
+    </section>
 
-    <p><strong>ENG:</strong><br>
-    Our website is under construction, so you can contact us at: +38762752155 (directly or Whatsapp, Viber, Telegram)<br>
-    Our business is vehicle servicing and maintenance + car rental (driver services - tours) in Sarajevo, Bosnia and Herzegovina - Europe.<br>
-    Passenger transportation in comfortable new vehicles to all desired destinations. Complete tourist arrangement in Sarajevo - accommodation, transportation, rental car, guide, airport transfers; limousine, van or minibus. River d.o.o. Sarajevo - our email: river.vraca@gmail.com</p>
+    <section class="rental" id="rental">
+      <div class="rental-copy">
+        <p class="eyebrow" data-i18n="rentalEyebrow">RIVER RENT-A-CAR</p>
+        <h2 data-i18n="rentalTitle">Vaš put.<br>Naša briga.</h2>
+        <p data-i18n="rentalLead">Uredna i pouzdana automatska vozila za posao, putovanje ili odmor — bez vozača ili sa našim vozačem.</p>
+        <div class="checks">
+          <span data-i18n="check1">✓ Fleksibilno preuzimanje i povrat</span>
+          <span data-i18n="check2">✓ Vozila do 8 putnika</span>
+          <span data-i18n="check3">✓ Transferi i turističke ture</span>
+        </div>
+        <a class="btn yellow language-call" href="tel:+38761564192" data-i18n="reserve">Rezervišite vozilo</a>
+      </div>
+      <div class="fleet-card">
+        <img src="assets/rentacar-flota.jpg" alt="River rent-a-car vozila: Škoda Octavia, Mercedes Vito i VW Transporter">
+        <div class="fleet-list">
+          <span>Škoda Octavia</span><span>Mercedes Vito · 8</span><span>VW Transporter · 8</span>
+        </div>
+      </div>
+    </section>
 
-    <p><strong>AR:</strong><br>
-    موقعنا الإلكتروني قيد الإنشاء، لذا يمكنكم التواصل معنا مباشرةً على الرقم: 38762752155(أو عبر واتساب، فايبر، تيليجرام).<br>
-    خدماتنا هي خدمة وصيانة المركبات، بالإضافة إلى تأجير السيارات (خدمات سائقين - جولات سياحية) في سراييفو، البوسنة والهرسك - أوروبا.<br>
-    نقل الركاب بسيارات مريحة وجديدة إلى جميع الوجهات المرغوبة. خدمات سياحية متكاملة في سراييفو - إقامة، مواصلات، تأجير سيارة، دليل سياحي، نقل من وإلى المطار؛ ليموزين، فان، أو حافلة صغيرة. شركة ريفر د.و.و. سراييفو - بريدنا الإلكتروني: river.vraca@gmail.com
-    </p>
-  </div>
+    <section class="section about" id="about">
+      <div class="about-image"><img src="assets/odbos.webp" alt="River Auto Centar na raskrsnici Vraca"><span data-i18n="locationBadge">Raskrsnica Vraca · Sarajevo</span></div>
+      <div class="about-copy">
+        <p class="eyebrow" data-i18n="aboutEyebrow">PORODIČNA FIRMA. DUGOGODIŠNJE POVJERENJE.</p>
+        <h2 data-i18n="aboutTitle">Više od dvije decenije uz sarajevske vozače</h2>
+        <p data-i18n="aboutP1">Izgradili smo povjerenje kroz više od 20 godina besprijekornog rada na tržištu Kantona Sarajevo. Bavimo se održavanjem motornih vozila, a u sklopu Auto-centra uspješno rade vulkanizer, praonica, servis te trgovina autodijelovima i opremom.</p>
+        <p data-i18n="aboutP2">Nudimo i vozila za najam, bez vozača ili sa našim vozačem prema želji klijenta. Nalazimo se dvije minute vožnje od stadiona Grbavica, tranzitom prema Bistriku, na glavnoj raskrsnici Vraca.</p>
+        <a class="text-link" href="https://maps.app.goo.gl/Q4Rso2mZPwe7gfck6" target="_blank" rel="noopener" data-i18n="directions">Otvorite lokaciju na Google mapi →</a>
+      </div>
+    </section>
+
+    <section class="gallery-strip" aria-label="River usluge">
+      <figure><img src="assets/dijag.webp" alt="Kompjuterska dijagnostika i servis"><figcaption data-i18n="gallery1">Dijagnostika i servis</figcaption></figure>
+      <figure><img src="assets/kocnice.jpg" alt="Servis kočionog sistema"><figcaption data-i18n="gallery2">Servis kočionog sistema</figcaption></figure>
+      <figure><img src="assets/ozon.jpg" alt="Dezinfekcija ozonom"><figcaption data-i18n="gallery3">Dezinfekcija ozonom</figcaption></figure>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow" data-i18n="contactEyebrow">KONTAKT I LOKACIJA</p>
+        <h2 data-i18n="contactTitle">Tu smo za vaše vozilo i vaše putovanje.</h2>
+        <p data-i18n="address">Pavla Lukača 2, glavna raskrsnica Vraca, Sarajevo</p>
+      </div>
+      <div class="contact-cards">
+        <a href="tel:+38733719777"><small data-i18n="serviceNumber">Servis / centrala</small><strong>033 719 777</strong></a>
+        <a href="tel:+38761564192"><small data-i18n="bosnianNumber">Bosanski jezik</small><strong>061 564 192</strong></a>
+        <a href="tel:+38762752155"><small>English</small><strong>062 752 155</strong></a>
+        <a href="mailto:river.vraca@gmail.com"><small>E-mail</small><strong>river.vraca@gmail.com</strong></a>
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/riversarajevo/" target="_blank" rel="noopener">Facebook ↗</a>
+        <a href="https://www.instagram.com/riversarajevo/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://river_vraca.olx.ba/aktivni" target="_blank" rel="noopener">OLX ↗</a>
+        <a href="https://maps.app.goo.gl/Q4Rso2mZPwe7gfck6" target="_blank" rel="noopener">Google Maps ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><img src="assets/logo.jpg" alt=""><p>© <span id="year"></span> River d.o.o. Sarajevo</p><span data-i18n="footer">Sigurnost u pokretu.</span></footer>
+  <a class="floating-call language-call" href="tel:+38761564192" aria-label="Pozovite River">☎</a>
+  <script src="script.js"></script>
 </body>
 </html>
