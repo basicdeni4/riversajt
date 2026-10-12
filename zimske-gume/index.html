@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091727">
+  <meta name="description" content="Zimske gume, ugradnja i hotel za ljetne gume u River Auto-centru na Grbavici–Vracama. Isplanirajte raniji dolazak prije 1. novembra.">
+  <title>River Sarajevo — Spremni za zimu. Prije gužve.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Preskoči na sadržaj</a>
+<header class="header">
+  <div class="container nav">
+    <a href="../" class="wordmark" aria-label="River Auto-centar Sarajevo, povratak na početnu">RIVER<span>AUTO-CENTAR · SARAJEVO</span></a>
+    <nav aria-label="Glavna navigacija"><a href="../">← Početna</a><a href="#usluge">Usluge</a><a href="#planer">Planer dolaska</a><a href="#lokacija">Lokacija</a></nav>
+    <a class="nav-call" href="tel:+38761564192"><svg aria-hidden="true"><use href="#phone"/></svg><span>061 564 192</span></a>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="hero-photo" src="assets/winter-tires.webp" alt="Detalj profila zimskih guma u tamnom studijskom ambijentu" width="1536" height="1024" fetchpriority="high">
+    <div class="hero-shade"></div>
+    <div class="container hero-inner">
+      <div class="eyebrow"><span class="small-line"></span>ZIMSKA SEZONA 2026/27</div>
+      <h1 id="hero-title">Spremni za zimu.<br><span>Prije gužve.</span></h1>
+      <p class="hero-copy">Zimske gume, ugradnja i hotel za ljetne gume.<br>Na jednom mjestu, na raskrsnici Grbavica–Vraca.</p>
+      <div class="hero-actions"><a class="button yellow" href="#planer">Isplaniraj raniji dolazak <svg aria-hidden="true"><use href="#arrow"/></svg></a><a class="text-link light" href="#usluge">Istraži usluge <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-deadline"><span class="date-stamp">01<span>NOV</span></span><div><strong>Zimska oprema od 1. novembra.</strong><p>Pripremu počnite već u oktobru.</p></div></div>
+    </div>
+    <div class="hero-caption">ILUSTRACIJA ZIMSKIH GUMA</div>
+  </section>
+  <div class="trust-strip"><div class="container"><span><svg aria-hidden="true"><use href="#pin"/></svg>Grbavica–Vraca, na tranzitu</span><span>Prodaja · Ugradnja · Hotel za gume</span><span class="deadline-pill"><span class="dot"></span><span id="countdown">Do 1. novembra: 20 dana</span></span></div></div>
+
+  <section class="section services container" id="usluge" aria-labelledby="services-title">
+    <div class="section-heading"><div><p class="eyebrow muted">01 / SVE ZA VAŠE GUME</p><h2 id="services-title">Jedna stanica.<br>Tri stvari manje za brigu.</h2></div><p>Od odabira zimskog seta do čuvanja ljetnih guma — istražite šta vam treba za novu sezonu.</p></div>
+    <div class="service-tabs" role="tablist" aria-label="River usluge za gume">
+      <button id="tab-sales" role="tab" aria-selected="true" aria-controls="service-panel" data-service="sales" tabindex="0"><span>01</span>Prodaja guma<svg aria-hidden="true"><use href="#arrow"/></svg></button>
+      <button id="tab-fitting" role="tab" aria-selected="false" aria-controls="service-panel" data-service="fitting" tabindex="-1"><span>02</span>Ugradnja<svg aria-hidden="true"><use href="#arrow"/></svg></button>
+      <button id="tab-hotel" role="tab" aria-selected="false" aria-controls="service-panel" data-service="hotel" tabindex="-1"><span>03</span>Hotel za gume<svg aria-hidden="true"><use href="#arrow"/></svg></button>
+    </div>
+    <div class="service-panel" id="service-panel" role="tabpanel" aria-labelledby="tab-sales" tabindex="0">
+      <div class="service-main"><span class="service-kicker" id="service-kicker">ODABIR ZIMSKOG SETA</span><h3 id="service-title">Dobra priprema počinje<br>pravom gumom.</h3><p id="service-copy">Trebate nove zimske gume? Krenite od dimenzije koju propisuje proizvođač vašeg vozila, a s Riverom provjerite ponudu i dostupnost prije dolaska.</p><a class="text-link" href="#planer" id="service-plan">Dodaj prodaju u moj plan <span aria-hidden="true">↗</span></a></div>
+      <aside class="service-aside"><svg aria-hidden="true"><use href="#tire"/></svg><p class="eyebrow muted" id="service-aside-label">ŠTA PRIPREMITI</p><ul id="service-list"><li>Dimenziju gume, npr. 205/55 R16</li><li>Marku i model vozila</li><li>Pitanje o cijeni i dostupnom setu</li></ul><p class="small">Cijene, dostupnost i uslove aktuelne akcije provjerite direktno s Riverom.</p></aside>
+    </div>
+  </section>
+
+  <section class="planner-section" id="planer" aria-labelledby="planner-title">
+    <div class="container">
+      <div class="section-heading"><div><p class="eyebrow">02 / PAMETNIJA PRIPREMA</p><h2 id="planner-title">Vaš plan.<br>Prije prvog novembra.</h2></div><p>Nekoliko jednostavnih izbora za prijedlog ranijeg dolaska. Termin i raspoloživost potvrđujete s Riverom.</p></div>
+      <div class="planner-grid">
+        <form class="planner-form" id="planner-form">
+          <div class="form-heading"><span class="step-number">1</span><h3>Šta vam treba?</h3></div>
+          <fieldset><legend class="sr-only">Stanje vaših zimskih guma</legend><div class="radio-options"><label><input type="radio" name="tires" value="new" checked><span><strong>Trebam zimske gume</strong><small>Prodaja i ugradnja</small></span></label><label><input type="radio" name="tires" value="own"><span><strong>Već imam zimske gume</strong><small>Sezonska zamjena</small></span></label></div></fieldset>
+          <label class="check-option"><input id="hotel" type="checkbox"><span><strong>Želim i hotel za ljetne gume</strong><small>Provjeriti čuvanje seta do naredne sezone.</small></span></label>
+          <div class="form-heading second"><span class="step-number">2</span><h3>Kada biste došli?</h3></div>
+          <label class="date-label" for="visit-date">Željeni datum dolaska</label><input id="visit-date" type="date" required aria-describedby="date-help date-error">
+          <p id="date-help" class="small">Izaberite dan u sezoni 2026/27. Radno vrijeme potvrdite pozivom.</p>
+          <label class="check-option flexible"><input id="flexible" type="checkbox" checked><span><strong>Mogu doći ranije</strong><small>Predloži raniji datum ako sam blizu gužve.</small></span></label>
+          <p class="error" id="date-error" role="alert" hidden></p>
+          <button class="button dark full" type="submit">Prikaži moj plan <svg aria-hidden="true"><use href="#arrow"/></svg></button>
+        </form>
+        <div class="plan-result" id="plan-result">
+          <div class="result-top"><span class="eyebrow muted">VAŠ PRIJEDLOG DOLASKA</span><svg aria-hidden="true"><use href="#calendar"/></svg></div>
+          <div aria-live="polite" aria-atomic="true"><span class="result-status" id="result-status">RANIJA PRIPREMA</span><h3 id="result-date">15. oktobar</h3><p class="result-sub" id="result-sub">Četvrtak · 17 dana prije roka</p><p id="result-reason">Raniji dolazak ostavlja više prostora za provjeru ponude i pripremu vozila.</p></div>
+          <div class="season-timeline" aria-label="Orijentacioni periodi pripreme"><span id="band-early"><i></i>Do 18.10.<small>Priprema ranije</small></span><span id="band-mid"><i></i>19–25.10.<small>Približava se rok</small></span><span id="band-late"><i></i>26–31.10.<small>Završna sedmica</small></span><span id="band-season"><i></i>Od 01.11.<small>Sezona traje</small></span></div>
+          <div class="plan-checklist"><h4>Prije dolaska</h4><ul id="plan-steps"><li>Provjerite dimenziju i dostupnost zimskih guma.</li><li>Nazovite River i dogovorite zamjenu.</li></ul></div>
+          <a class="button yellow full" href="tel:+38761564192">Potvrdi dolazak · 061 564 192 <svg aria-hidden="true"><use href="#phone"/></svg></a>
+          <div class="plan-secondary"><button class="text-link" id="save-reminder" type="button">Sačuvaj podsjetnik <span aria-hidden="true">↓</span></button><a class="text-link" id="email-plan" href="mailto:river.vraca@gmail.com">Pošalji upit s planom <span aria-hidden="true">↗</span></a></div>
+          <p class="small result-note">Ovo je prijedlog, a ne rezervacija. Periodi su orijentacioni; ne prikazuju stvarnu gužvu ili slobodne termine.</p>
+          <p class="small" id="save-status" role="status"></p>
+        </div>
+      </div>
+      <noscript><p class="no-script">Za interaktivni planer uključite JavaScript. Za dogovor ranijeg dolaska nazovite <a href="tel:+38761564192">061 564 192</a>.</p></noscript>
+    </div>
+  </section>
+
+  <section class="section preparation container" aria-labelledby="prep-title">
+    <div class="prep-intro"><p class="eyebrow muted">03 / PRIJE NEGO KRENETE</p><h2 id="prep-title">Mali pregled.<br>Mirnija sezona.</h2><p>Priprema za zimu ide dalje od promjene guma.</p><a class="source-link" href="https://bihamk.ba/vijesti/od-01-novembrastudenog-obavezno-posjedovanje-zimske-opreme/581" target="_blank" rel="noopener noreferrer">Savjeti BIHAMK-a <span aria-hidden="true">↗</span></a></div>
+    <div class="prep-content"><div class="check-row"><span>01</span><div><h3>Gume i odgovarajuća oprema</h3><p>Provjerite stanje guma i koja je kombinacija zimske opreme odgovarajuća za vaše vozilo.</p></div></div><div class="check-row"><span>02</span><div><h3>Tekućine, akumulator i svjetla</h3><p>Provjerite rashladnu tekućinu, tekućinu za stakla, akumulator i ispravnost svjetala.</p></div></div><div class="check-row"><span>03</span><div><h3>Kočnice i preglednost</h3><p>Obratite pažnju na kočioni sistem i brisače. Pripremite strugač za led i očistite stakla prije vožnje.</p></div></div></div>
+  </section>
+
+  <section class="faq-section container" aria-labelledby="faq-title"><p class="eyebrow muted">DOBRO JE ZNATI</p><h2 id="faq-title">Prije dolaska u River.</h2><div class="faq-list">
+    <details><summary>Da li od 1. novembra moram imati baš zimske gume?<span aria-hidden="true">+</span></summary><div><p>U BiH je od 1. novembra do 1. aprila obavezna zimska oprema, bez obzira na vrijeme, uz izuzetke za kategorije L, T i C. Za putničko vozilo propis dopušta zimske gume na svim točkovima; zimske gume na pogonskim točkovima uz pripremljene lance ili odgovarajuće uređaje za najmanje dva pogonska točka; ili ljetne gume na svim točkovima s profilom najmanje 4 mm uz takve lance ili uređaje. Provjerite cijeli propis i opremu za svoje vozilo.</p><a class="source-link" href="https://jpcfbih.ba/bs/korisne-informacije/zimska-oprema/28" target="_blank" rel="noopener noreferrer">Pravilnik o prometu u zimskim uvjetima · član 3 <span aria-hidden="true">↗</span></a></div></details>
+    <details><summary>Da li planer rezerviše termin?<span aria-hidden="true">+</span></summary><div><p>Planer pomaže da odaberete dan i pripremite pitanja. Za potvrdu termina, radnog vremena i raspoloživosti nazovite 061 564 192 ili pošaljite upit na river.vraca@gmail.com. Podsjetnik je samo vaš lični plan.</p></div></details>
+    <details><summary>Kako dogovoriti hotel za ljetne gume?<span aria-hidden="true">+</span></summary><div><p>Označite hotel u planeru i prilikom dogovora zamjene pitajte River o cijeni, uslovima i dostupnosti čuvanja vašeg seta. Tako zamjenu i odlaganje ljetnih guma možete organizovati jednim pozivom.</p></div></details>
+  </div></section>
+
+  <section class="location-section" id="lokacija" aria-labelledby="location-title"><div class="container location-grid"><div><p class="eyebrow">GRBAVICA–VRACA · SARAJEVO</p><h2 id="location-title">Vaša usputna stanica<br>za zimsku sezonu.</h2><p>River Auto-centar, na glavnoj raskrsnici Vraca.<br>Pavla Lukača 2, Sarajevo.</p><a class="button yellow" href="https://www.google.com/maps/search/?api=1&amp;query=River%20Auto%20Centar%20Pavla%20Luka%C4%8Da%202%20Sarajevo" target="_blank" rel="noopener noreferrer">Otvori lokaciju <svg aria-hidden="true"><use href="#pin"/></svg></a></div><div class="contact-panel"><span class="eyebrow">DOGOVORITE DOLAZAK</span><a class="contact-phone" href="tel:+38761564192">061 564 192 <span aria-hidden="true">↗</span></a><a class="contact-email" href="mailto:river.vraca@gmail.com">river.vraca@gmail.com</a><div class="contact-foot"><span>Prodaja · Ugradnja · Hotel za gume</span><a href="../">Povratak na početnu ↗</a></div></div></div></section>
+</main>
+<footer class="footer container"><a class="footer-brand" href="../">RIVER</a><span>© 2026 River d.o.o. Sarajevo</span><span>Spremni za zimu. Prije gužve.</span></footer>
+<svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="m8 3-4 1c-2 5 6 15 12 16l4-3-4-4-3 2-5-6 2-2-2-4Z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+  <symbol id="calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4m8-4v4m-8 7h3m2 0h3m-8 4h3"/></symbol>
+  <symbol id="tire" viewBox="0 0 80 80"><circle cx="40" cy="40" r="31"/><circle cx="40" cy="40" r="20"/><circle cx="40" cy="40" r="5"/><path d="m40 20 0 15m0 10v15M20 40h15m10 0h15M26 26l10 10m8 8 10 10M26 54l10-10m8-8 10-10M35 9l-4 8m18-7-4 8m18-1-7 5m15 8-8 3m7 16-8-3m-8 17-5-7m-14 15-4-8m-14-2 5-7m-14-8 8-3m-7-14 8 3m2-17 7 5"/></symbol>
+</defs></svg>
+</body>
+</html>
